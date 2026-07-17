@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pacha Purum: láminas vegetales sin TACC para cocinar simple, rico y diferente.">
+  <meta property="og:title" content="Pacha Purum — Origen vegetal. Forma nueva.">
+  <title>Pacha Purum | Láminas vegetales</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement"><span>Envíos a todo el país</span><i></i><span>3 cuotas sin interés</span><i></i><span>10% OFF por transferencia</span></div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#inicio" data-route="home" aria-label="Ir al inicio">
+      <span class="brand-mark"><i class="fa-solid fa-seedling"></i></span>
+      <span class="brand-name">Pacha Purum</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#inicio" data-route="home">Inicio</a>
+      <a href="#catalogo" data-route="catalog">Tienda</a>
+      <a href="#historia" data-scroll="story">Nuestra raíz</a>
+      <a href="#recetas" data-scroll="recipes">Ideas ricas</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-trigger" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="cart-trigger" data-route="cart" aria-label="Ver carrito">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span>Carrito</span>
+        <b class="cart-count">0</b>
+      </button>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" aria-label="Navegación móvil">
+    <a href="#inicio" data-route="home">Inicio</a>
+    <a href="#catalogo" data-route="catalog">Tienda</a>
+    <a href="#historia" data-scroll="story">Nuestra raíz</a>
+    <a href="#recetas" data-scroll="recipes">Ideas ricas</a>
+  </nav>
+
+  <div class="search-panel" aria-hidden="true">
+    <div class="search-box">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="search" id="globalSearch" placeholder="Buscá por sabor o ingrediente..." aria-label="Buscar productos">
+      <button class="search-close" aria-label="Cerrar búsqueda"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div id="searchResults" class="search-results"></div>
+  </div>
+
+  <main>
+    <section class="view active" data-view="home" aria-label="Inicio">
+      <section class="hero fade-in">
+        <div class="hero-copy">
+          <span class="eyebrow"><i class="fa-solid fa-leaf"></i> Alimentos reales, ideas infinitas</span>
+          <h1>Laminas <br>vegetales <em>para cocinas creativas</em></h1>
+          <p>Láminas hechas con vegetales, sin TACC y listas para convertir cualquier comida en algo increíble.</p>
+          <div class="hero-actions">
+            <button class="button button-primary" data-route="catalog">Conocé los sabores <i class="fa-solid fa-arrow-right"></i></button>
+            <button class="text-link" data-scroll="how">¿Cómo se usan? <i class="fa-solid fa-play"></i></button>
+          </div>
+          <div class="hero-proof">
+            <div class="avatars"><span>MP</span><span>JL</span><span>AG</span></div>
+            <div><div class="stars">★★★★★</div><small>+1.900 cocinas ya las eligieron</small></div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Selección de láminas vegetales Pacha Purum">
+          <span class="hero-sun"></span>
+          <span class="orbit-copy">100% VEGETAL · SIN TACC ·</span>
+          <div class="pack pack-hero pack-tomato">
+            <div class="pack-top">LÁMINAS VEGETALES</div>
+            <i class="fa-solid fa-seedling"></i>
+            <strong>Tomate</strong>
+            <small>color, sabor y naturaleza</small>
+            <span>8 unidades</span>
+          </div>
+          <div class="pack pack-side pack-spinach">
+            <div class="pack-top">LÁMINAS VEGETALES</div>
+            <i class="fa-solid fa-seedling"></i>
+            <strong>Espinaca</strong>
+            <small>suaves y versátiles</small>
+          </div>
+          <span class="hero-sticker">SIN<br><b>TACC</b></span>
+          <span class="scribble"><i class="fa-solid fa-arrow-turn-up"></i> abrí, rellená, disfrutá</span>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="Beneficios">
+        <div class="marquee-track">
+          <span>Sin conservantes</span><i class="fa-solid fa-seedling"></i>
+          <span>Hechas con vegetales</span><i class="fa-solid fa-seedling"></i>
+          <span>Sin TACC</span><i class="fa-solid fa-seedling"></i>
+          <span>Listas en minutos</span><i class="fa-solid fa-seedling"></i>
+          <span>Sin conservantes</span><i class="fa-solid fa-seedling"></i>
+          <span>Hechas con vegetales</span><i class="fa-solid fa-seedling"></i>
+        </div>
+      </section>
+
+      <section class="section bestsellers fade-in" id="productos">
+        <div class="section-heading">
+          <div><span class="eyebrow">Los más elegidos</span><h2>Tu próxima comida<br><em>empieza acá.</em></h2></div>
+          <button class="text-link desktop-only" data-route="catalog">Ver todos los productos <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="product-grid" id="featuredProducts"></div>
+        <button class="button button-outline mobile-only" data-route="catalog">Ver toda la tienda</button>
+      </section>
+
+      <section class="how-section fade-in" id="how">
+        <div class="how-image">
+          <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="Mesa con ingredientes frescos para cocinar">
+          <span class="image-note">Comé rico<br>todos los días</span>
+        </div>
+        <div class="how-copy">
+          <span class="eyebrow light">Más simple de lo que parece</span>
+          <h2>Una lámina.<br><em>Mil maneras.</em></h2>
+          <p>Humedecelas unos segundos y usalas como quieras. La parte divertida queda de tu lado.</p>
+          <ol class="steps">
+            <li><b>01</b><span><strong>Humedecé</strong><small>Pasalas por agua de 10 a 15 segundos.</small></span></li>
+            <li><b>02</b><span><strong>Rellená</strong><small>Con eso rico que ya tenés en casa.</small></span></li>
+            <li><b>03</b><span><strong>Creá</strong><small>Wraps, rolls, canelones y mucho más.</small></span></li>
+          </ol>
+          <button class="button button-cream" data-route="catalog">Quiero probarlas</button>
+        </div>
+      </section>
+
+      <section class="section story fade-in" id="story">
+        <div class="story-title">
+          <span class="eyebrow">Nuestra raíz</span>
+          <h2>Más vegetal.<br>Más creativo.<br><em>Más vos.</em></h2>
+        </div>
+        <div class="story-copy">
+          <p class="lead">Nacimos con una pregunta simple: ¿y si comer vegetales fuera también una invitación a jugar?</p>
+          <p>Transformamos ingredientes reales en láminas flexibles, coloridas y fáciles de usar. Sin vueltas raras, sin TACC y producidas en Argentina.</p>
+          <a href="https://www.instagram.com/pachapurum/" target="_blank" rel="noopener" class="text-link">Conocé nuestra historia <i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="story-seal"><i class="fa-solid fa-seedling"></i><span>ORIGEN VEGETAL<br>FORMA NUEVA</span></div>
+      </section>
+
+      <section class="section recipes fade-in" id="recipes">
+        <div class="section-heading">
+          <div><span class="eyebrow">Inspiración para hoy</span><h2>Ideas que entran<br><em>por los ojos.</em></h2></div>
+          <a href="https://www.instagram.com/pachapurum/" target="_blank" rel="noopener" class="text-link desktop-only">Ver más en Instagram <i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="recipe-grid">
+          <article class="recipe-card recipe-large">
+            <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Wrap relleno de vegetales frescos">
+            <div><span>15 min · Fácil</span><h3>Wrap arcoíris con hummus</h3></div>
+          </article>
+          <article class="recipe-card">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Rolls vegetales dorados">
+            <div><span>20 min · Horno</span><h3>Rolls crocantes</h3></div>
+          </article>
+          <article class="recipe-card quote-card"><i class="fa-solid fa-quote-left"></i><p>“La cocina de todos los días también puede sorprender.”</p><span>— Manifiesto Pacha</span></article>
+        </div>
+      </section>
+
+      <section class="newsletter fade-in">
+        <span class="newsletter-icon"><i class="fa-regular fa-paper-plane"></i></span>
+        <div><span class="eyebrow light">Un correo que sí vas a querer abrir</span><h2>Recetas, novedades<br>y un poco de <em>magia vegetal.</em></h2></div>
+        <form id="newsletterForm" class="newsletter-form">
+          <label for="newsletterEmail" class="sr-only">Tu correo electrónico</label>
+          <input id="newsletterEmail" type="email" placeholder="tu@email.com" required>
+          <button type="submit" aria-label="Suscribirme"><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+        <small id="newsletterMessage">Cero spam. Solo cosas ricas.</small>
+      </section>
+    </section>
+
+    <section class="view catalog-view" data-view="catalog" aria-label="Catálogo">
+      <div class="page-hero fade-in">
+        <span class="eyebrow">Tienda Pacha</span>
+        <h1>Todo lo que necesitás<br>para <em>crear algo rico.</em></h1>
+        <p>Elegí tu sabor, armá tu combo y dejá que la cocina haga el resto.</p>
+      </div>
+      <div class="catalog-toolbar fade-in">
+        <div class="filter-pills" role="group" aria-label="Filtrar productos">
+          <button class="active" data-filter="all">Todo</button>
+          <button data-filter="laminas">Láminas</button>
+          <button data-filter="combos">Combos</button>
+          <button data-filter="especiales">Edición especial</button>
+        </div>
+        <label class="sort-label">Ordenar por
+          <select id="sortProducts"><option value="featured">Destacados</option><option value="low">Menor precio</option><option value="high">Mayor precio</option></select>
+        </label>
+      </div>
+      <div class="catalog-grid fade-in" id="catalogProducts"></div>
+      <section class="catalog-banner fade-in">
+        <div><span class="eyebrow light">¿No sabés cuál elegir?</span><h2>Probá un poco<br><em>de todo.</em></h2><button class="button button-cream" data-product="combo-raiz">Ver Combo Raíz</button></div>
+        <div class="mini-packs"><span class="mini-pack red">Tomate</span><span class="mini-pack green">Espinaca</span><span class="mini-pack orange">Zanahoria</span></div>
+      </section>
+    </section>
+
+    <section class="view product-view" data-view="product" aria-label="Detalle de producto">
+      <div class="breadcrumbs"><button data-route="home">Inicio</button><i class="fa-solid fa-chevron-right"></i><button data-route="catalog">Tienda</button><i class="fa-solid fa-chevron-right"></i><span id="productCrumb">Producto</span></div>
+      <div class="product-detail fade-in">
+        <div class="detail-gallery">
+          <div class="detail-main" id="detailVisual"></div>
+          <div class="detail-benefits"><span><i class="fa-solid fa-wheat-awn-circle-exclamation"></i> Sin TACC</span><span><i class="fa-solid fa-leaf"></i> Vegetal</span><span><i class="fa-regular fa-clock"></i> Listo en minutos</span></div>
+        </div>
+        <div class="detail-info">
+          <span class="eyebrow" id="detailCategory">Láminas vegetales</span>
+          <h1 id="detailName">Tomate</h1>
+          <div class="detail-rating"><span>★★★★★</span><a href="#opiniones">4.9 · 38 opiniones</a></div>
+          <p class="detail-description" id="detailDescription"></p>
+          <div class="detail-price"><strong id="detailPrice"></strong><span>3 cuotas sin interés</span></div>
+          <div class="option-group"><span>Cantidad</span><div class="quantity-control"><button class="qty-minus" aria-label="Restar">−</button><b id="detailQty">1</b><button class="qty-plus" aria-label="Sumar">+</button></div></div>
+          <button class="button button-primary detail-add"><span>Agregar al carrito</span><b id="detailAddPrice"></b></button>
+          <button class="buy-now">Comprar ahora</button>
+          <ul class="purchase-notes"><li><i class="fa-solid fa-truck-fast"></i><span><b>Envío gratis</b> en compras superiores a $35.000</span></li><li><i class="fa-solid fa-shield-heart"></i><span><b>Compra protegida</b> y pago 100% seguro</span></li></ul>
+          <details open><summary>Cómo se usan <i class="fa-solid fa-plus"></i></summary><p>Humedecé cada lámina entre 10 y 15 segundos, rellená y doblá. Podés comerla fresca, dorarla en sartén o llevarla al horno.</p></details>
+          <details><summary>Ingredientes <i class="fa-solid fa-plus"></i></summary><p>Vegetales seleccionados, almidón de mandioca, sal marina y especias. Elaborado sin TACC.</p></details>
+        </div>
+      </div>
+      <section class="detail-story fade-in" id="opiniones"><span class="big-quote">“</span><p>Son suaves, no se rompen y me salvaron un montón de cenas.</p><div class="stars">★★★★★</div><small>Mariana P. · Compra verificada</small></section>
+      <section class="section related fade-in"><div class="section-heading"><div><span class="eyebrow">También te pueden gustar</span><h2>Seguí <em>explorando.</em></h2></div></div><div class="product-grid" id="relatedProducts"></div></section>
+    </section>
+
+    <section class="view cart-view" data-view="cart" aria-label="Carrito de compras">
+      <div class="page-hero compact fade-in"><span class="eyebrow">Tu selección</span><h1>Carrito <em id="cartTitleCount">(0)</em></h1></div>
+      <div class="cart-layout fade-in">
+        <div class="cart-list" id="cartList"></div>
+        <aside class="order-summary">
+          <h2>Resumen</h2>
+          <div><span>Subtotal</span><b id="cartSubtotal">$0</b></div>
+          <div><span>Envío</span><b id="cartShipping">A calcular</b></div>
+          <label for="coupon">¿Tenés un cupón?</label>
+          <div class="coupon-row"><input id="coupon" type="text" placeholder="Código"><button id="applyCoupon">Aplicar</button></div>
+          <p class="coupon-message" id="couponMessage"></p>
+          <div class="summary-total"><span>Total</span><b id="cartTotal">$0</b></div>
+          <button class="button button-primary checkout-button" data-route="checkout">Iniciar compra <i class="fa-solid fa-arrow-right"></i></button>
+          <button class="continue-shopping" data-route="catalog"><i class="fa-solid fa-arrow-left"></i> Seguir comprando</button>
+          <div class="secure-note"><i class="fa-solid fa-lock"></i> Pago seguro y protegido</div>
+        </aside>
+      </div>
+      <section class="cart-reassurance fade-in"><div><i class="fa-solid fa-box"></i><b>Despachamos en 24/48 hs</b><span>Te avisamos cada paso.</span></div><div><i class="fa-solid fa-credit-card"></i><b>Pagá como quieras</b><span>Tarjetas o transferencia.</span></div><div><i class="fa-brands fa-whatsapp"></i><b>Estamos para ayudarte</b><span>Hablá con una persona real.</span></div></section>
+    </section>
+
+    <section class="view checkout-view" data-view="checkout" aria-label="Finalizar compra">
+      <div class="checkout-header"><button data-route="cart"><i class="fa-solid fa-arrow-left"></i> Volver al carrito</button><div class="checkout-brand"><i class="fa-solid fa-seedling"></i> Pacha Purum</div><span><i class="fa-solid fa-lock"></i> Compra segura</span></div>
+      <div class="checkout-layout fade-in">
+        <form class="checkout-form" id="checkoutForm">
+          <div class="checkout-progress"><span class="active"><b>1</b> Datos</span><i></i><span><b>2</b> Envío</span><i></i><span><b>3</b> Pago</span></div>
+          <section class="form-section">
+            <div class="form-title"><span>01</span><div><h2>Datos de contacto</h2><p>Para enviarte la confirmación de compra.</p></div></div>
+            <div class="form-grid"><label class="full">Correo electrónico<input name="email" type="email" placeholder="hola@ejemplo.com" required></label><label>Nombre<input name="name" type="text" placeholder="Tu nombre" required></label><label>Apellido<input name="lastname" type="text" placeholder="Tu apellido" required></label><label class="full">Teléfono<input name="phone" type="tel" placeholder="11 2345 6789" required></label></div>
+          </section>
+          <section class="form-section">
+            <div class="form-title"><span>02</span><div><h2>Entrega</h2><p>¿Dónde querés recibir tu pedido?</p></div></div>
+            <div class="delivery-options"><label><input type="radio" name="delivery" value="home" checked><i class="fa-solid fa-truck"></i><span><b>Envío a domicilio</b><small>Llega entre 3 y 5 días hábiles</small></span><strong>$4.200</strong></label><label><input type="radio" name="delivery" value="pickup"><i class="fa-solid fa-shop"></i><span><b>Retiro sin cargo</b><small>Pilar, Buenos Aires</small></span><strong>Gratis</strong></label></div>
+            <div class="form-grid address-fields"><label class="full">Calle y número<input name="address" type="text" placeholder="Ej: Av. Siempreviva 742" required></label><label>Ciudad<input name="city" type="text" placeholder="Tu ciudad" required></label><label>Código postal<input name="zip" type="text" placeholder="0000" required></label><label class="full">Aclaraciones (opcional)<input name="notes" type="text" placeholder="Piso, departamento, referencias..."></label></div>
+          </section>
+          <section class="form-section">
+            <div class="form-title"><span>03</span><div><h2>Pago</h2><p>Elegí cómo pagar tu compra.</p></div></div>
+            <div class="payment-options"><label><input type="radio" name="payment" checked><i class="fa-regular fa-credit-card"></i><span><b>Tarjeta de crédito o débito</b><small>Hasta 3 cuotas sin interés</small></span></label><label><input type="radio" name="payment"><i class="fa-solid fa-building-columns"></i><span><b>Transferencia bancaria</b><small>10% de descuento</small></span></label></div>
+          </section>
+          <button type="submit" class="button button-primary place-order">Confirmar pedido <i class="fa-solid fa-lock"></i></button>
+        </form>
+        <aside class="checkout-summary"><h2>Tu pedido</h2><div id="checkoutItems"></div><div class="checkout-costs"><p><span>Subtotal</span><b id="checkoutSubtotal"></b></p><p><span>Envío</span><b id="checkoutShipping">$4.200</b></p><p class="total"><span>Total</span><b id="checkoutTotal"></b></p></div><div class="checkout-help"><i class="fa-regular fa-circle-question"></i><span><b>¿Necesitás ayuda?</b><small>Escribinos por WhatsApp</small></span></div></aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand"><a class="brand" href="#inicio" data-route="home"><span class="brand-mark"><i class="fa-solid fa-seedling"></i></span><span class="brand-name">Pacha Purum</span></a><p>Origen vegetal.<br>Forma nueva.</p><div class="socials"><a href="https://www.instagram.com/pachapurum/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></div></div>
+      <div><h3>Explorá</h3><a href="#catalogo" data-route="catalog">Tienda</a><a href="#historia" data-scroll="story">Nuestra raíz</a><a href="#recetas" data-scroll="recipes">Recetas</a></div>
+      <div><h3>Ayuda</h3><a href="#envios">Envíos</a><a href="#pagos">Medios de pago</a><a href="#preguntas">Preguntas frecuentes</a></div>
+      <div><h3>Contacto</h3><a href="mailto:hola@pachapurum.com.ar">hola@pachapurum.com.ar</a><span>Pilar, Buenos Aires</span><span>Lun a vie · 9 a 18 hs</span></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Pacha Purum</span><div><a href="#privacidad">Privacidad</a><a href="#terminos">Términos</a></div><span>Hecho con <i class="fa-solid fa-heart"></i> y vegetales</span></div>
+  </footer>
+
+  <a class="whatsapp-button" href="https://wa.me/5491123456789?text=Hola%20Pacha%20Purum,%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>¿Te ayudamos?</span></a>
+  <div class="toast" role="status" aria-live="polite"><i class="fa-solid fa-circle-check"></i><span>Producto agregado al carrito</span></div>
+  <div class="success-modal" aria-hidden="true"><div class="success-card"><span class="success-icon"><i class="fa-solid fa-check"></i></span><span class="eyebrow">¡Pedido confirmado!</span><h2>Gracias por elegir<br><em>comer distinto.</em></h2><p>Te enviamos todos los detalles a tu correo. Tu número de pedido es <b>#PP-2048</b>.</p><button class="button button-primary" data-route="home">Volver al inicio</button></div></div>
+  <script src="main.js"></script>
+</body>
+</html>
