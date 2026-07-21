@@ -35,7 +35,7 @@ h1, h2, h3, p { margin-top: 0; }
 .brand { display: inline-flex; align-items: center; gap: 10px; }
 .brand-mark { width: 32px; height: 32px; border-radius: 50% 50% 46% 54%; display: grid; place-items: center; color: var(--cream); background: var(--ink); transform: rotate(-6deg); }
 .brand-mark i { font-size: 14px; transform: rotate(6deg); }
-.brand-name { font: 600 20px/1 var(--display); letter-spacing: -.04em; }
+.brand-name { font: 600 20px/1 var(--display); letter-spacing: -0.06em; }
 .desktop-nav { display: none; align-items: center; gap: 32px; font-size: 13px; font-weight: 600; }
 .desktop-nav a { position: relative; }
 .desktop-nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -5px; height: 2px; background: var(--ink); transition: .25s; }
